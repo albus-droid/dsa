@@ -1,4 +1,4 @@
-### Toeplitz Matrix (easy)
+### Toeplitz Matrix
 Problem Statement
 
 Given an m x n matrix, determine if a given matrix is a Toeplitz matrix.
