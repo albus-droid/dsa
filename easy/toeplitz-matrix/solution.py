@@ -8,8 +8,16 @@ class Solution:
         return True
 
 # Testing the algorithm with example inputs
+def assert_test(got, expected):
+	print("Result :", got, " Expected: ", expected)
+	assert got == expected
+	assert type(got) is type(expected)
+	
 if __name__ == "__main__":
     solution = Solution()
-    print(solution.isToeplitzMatrix([[1, 2, 3], [4, 1, 2], [5, 4, 1]]))  # true
-    print(solution.isToeplitzMatrix([[1, 2], [3, 4]]))  # false
-    print(solution.isToeplitzMatrix([[7, 7, 7], [7, 7, 7], [7, 7, 7]]))  # true
+    assert_test(solution.isToeplitzMatrix([[1, 2, 3], [4, 1, 2], [5, 4, 1]]), True)  # true
+    assert_test(solution.isToeplitzMatrix([[1, 2], [3, 4]]), False)  # false
+    assert_test(solution.isToeplitzMatrix([[7, 7, 7], [7, 7, 7], [7, 7, 7]]), True)  # true
+
+    print("\033[92m[OK]\033[0m All test cases passed")
+
